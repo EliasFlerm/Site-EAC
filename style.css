@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+a {
+    color: #F5B710;
+    text-decoration: none;
+}
+
+h1 {
+    color: #100575;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #090345;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ui {
+    margin-left: 200px;
+}
+
+.nav li {
+    padding-left: 100px;
+}
+
+.projeto {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   background-image: url("arduino.jpeg");background-position: center;background-size: cover;
+   color: white;
+}
+
+.projeto h1 {
+    margin-top: 100px;
+}
+
+.projeto p {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.projetoTexto {
+    color: white;
+}
+
+.problematica {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.problematicaQuadros {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    /*flex-direction: row;
+    justify-content: space-evenly;*/
+}
+
+.problematicaQuadros div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #bbbbbb;
+    width: 400px;
+    height: 550px;
+}
+
+.problematicaQuadros h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.problematicaQuadros p {
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.quadro1 {
+    margin-right: 55px; 
+}
+
+.componentesDiv {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.grupo1 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #bbbbbb;
+    width: 400px;
+    height: 550px;
+}
+
+.grupo1 h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.grupo1 p {
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.componente1 {
+    margin-right: 55px; 
+}
+
+.componente3 {
+    margin-right: 55px; 
+}
+
+.componente5 {
+    margin-right: 55px; 
+}
+
+.componente7 {
+    margin-right: 55px; 
+}
+
+.grupo2 {
+    margin-top: 122px;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #bbbbbb;
+    width: 400px;
+    height: 550px;
+}
+
+.grupo2 h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.grupo2 p {
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.grupo3 {
+    margin-top: 122px;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #bbbbbb;
+    width: 400px;
+    height: 550px;
+}
+
+.grupo3 h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.grupo3 p {
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.grupo4 {
+    margin-top: 122px;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo4 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #bbbbbb;
+    width: 400px;
+    height: 550px;
+}
+
+.grupo4 h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.grupo4 p {
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+    background-color: #090345;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    
+}
+
+.footer p {
+    color: white;
+    padding-top: 35px;
+}
