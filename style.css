@@ -5,8 +5,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+html ,body {
     background-color: #d9d9d9;
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -18,244 +20,281 @@ h1 {
     color: #100575;
 }
 
-nav {
+.nav {
+    /*position: fixed;*/
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #090345;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 23px;
+    width: 100%;
+    height: 81px;
 }
 
 .nav-list {
+    display: flex;
     list-style: none;
-    display: flex;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav ui {
-    margin-left: 200px;
-}
-
-.nav li {
+.nav-list li {
     padding-left: 100px;
 }
 
+/*Início*/
+
 .projeto {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding-left: 10%;
-   padding-right: 10%;
-   background-image: url("arduino.jpeg");background-position: center;background-size: cover;
-   color: white;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url("/assets/images/arduino.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken; 
+    color: white;
+ }
 
 .projeto h1 {
     margin-top: 100px;
+    text-align: center;
 }
 
 .projeto p {
-    margin-top: 80px;
+    margin-top: 5px;
     margin-bottom: 100px;
+    text-align: justify;
 }
 
 .projetoTexto {
     color: white;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .problematica {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 100px;
 }
 
-.problematicaQuadros {
+.problematica h1 {
+    text-align: center;
+}
+
+.problematicaCards {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-
-    /*flex-direction: row;
-    justify-content: space-evenly;*/
 }
 
-.problematicaQuadros div {
+/*O Css  dos Cards (este aq em baixo) é o mesmo na Problematica e nos Componentes*/
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: -5px 7px 10px #444;
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.card .imgH {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 0px;
+}
+
+.card .imgH img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.card:hover .imgH img {
+    opacity: 0.9;
+}
+
+.card .textH {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: #bbbbbb;
-    width: 400px;
-    height: 550px;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    color: white;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.problematicaQuadros h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
+.card:hover .textH {
+    top: 25px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
 }
 
-.problematicaQuadros p {
-    padding: 30px;
-    font-size: 15px;
+.componentesTodos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.componentesTodos h1 {
     text-align: center;
 }
 
-.quadro1 {
-    margin-right: 55px; 
+.componentesCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
-.componentesDiv {
+/*Css da Cartilha&Artigo(index2)*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 75%;
+    margin-top: 150px;
+}
+
+.cartilha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    gap: 1rem;
+}
+
+.cartilha-Botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.esquerda, .direita {
+    background-color: #100575;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 37px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 50px; 
+    font-variation-settings: 'wght' 750; 
+    cursor: pointer;
+}
+
+
+.baixar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-
-.grupo1 {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-}
-
-.grupo1 div {
+.section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: #bbbbbb;
-    width: 400px;
-    height: 550px;
+    gap: 2rem; 
 }
 
-.grupo1 h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
+.btnDownload {
+    background-color: #100575;
+    border-radius: 15px;
+    width: 232px;
+    height: 44px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.grupo1 p {
-    padding: 30px;
-    font-size: 15px;
+#dowload {
+    padding-left: 30px;
+}
+
+/*Css do Sobre(index3)*/
+.integrantesH1 {
+    margin-top: 100px;
     text-align: center;
 }
 
-.componente1 {
-    margin-right: 55px; 
+.integrantes {
+    margin-top: 100px;
+    color: #100575;
 }
 
-.componente3 {
-    margin-right: 55px; 
+.integrantes img {
+    border: none;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
 }
 
-.componente5 {
-    margin-right: 55px; 
-}
-
-.componente7 {
-    margin-right: 55px; 
-}
-
-.grupo2 {
-    margin-top: 122px;
+.integrupo1 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
-.grupo2 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.integrupo1 div {
     align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: #bbbbbb;
-    width: 400px;
-    height: 550px;
-}
-
-.grupo2 h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.grupo2 p {
-    padding: 30px;
-    font-size: 15px;
     text-align: center;
 }
 
-.grupo3 {
-    margin-top: 122px;
+.integrupo2 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.grupo3 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.integrupo2 div {
     align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: #bbbbbb;
-    width: 400px;
-    height: 550px;
-}
-
-.grupo3 h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.grupo3 p {
-    padding: 30px;
-    font-size: 15px;
     text-align: center;
 }
 
-.grupo4 {
-    margin-top: 122px;
-    display: flex;
-    justify-content: center;
-}
-
-.grupo4 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: #bbbbbb;
-    width: 400px;
-    height: 550px;
-}
-
-.grupo4 h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.grupo4 p {
-    padding: 30px;
-    font-size: 15px;
-    text-align: center;
+.pEquipe {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 80px;
+    color: #100575;
+    font-size: 28px;
+    font-weight: medium;
+    text-align: justify;
 }
 
 .footer {
@@ -266,7 +305,6 @@ nav {
     background-color: #090345;
     padding-top: 55px;
     padding-bottom: 55px;
-    
 }
 
 .footer p {
